@@ -11,7 +11,7 @@ class Artist
     song = Song.new(song)
   end
 
-  def self.save(artist)
+  def self.save
     @@all << artist
   end
 
