@@ -1,6 +1,6 @@
 class MP3Importer
-
-
+  attr_accessor :path
+  
   def initialize(path)
     @path = path
 
@@ -8,7 +8,7 @@ class MP3Importer
 
   def files(path)
     files = []
-    self.path.glob("mp3/*.mp3")
+    path.glob("mp3/*.mp3")
   end
 
   def import
