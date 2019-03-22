@@ -17,8 +17,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if @@all.exclude?(name) do Artist.new(name)
-    end
+    if @@all.exclude?(name) { Artist.new(name) }
   end
 
   def save
