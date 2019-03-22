@@ -8,7 +8,6 @@ class MP3Importer
 
   def files(path)
     path.glob("#{path}/*.mp3").collect { |filename| filename.gsub("#{path}/","")}
-
   end
 
   def import
