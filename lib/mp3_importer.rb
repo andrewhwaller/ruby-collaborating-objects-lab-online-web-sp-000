@@ -5,12 +5,12 @@ class MP3Importer
 
   end
 
-  def files
-
+  def files(path)
+    files = path.glob("mp3/*.mp3")
   end
 
   def import
 
   end
-  
+
 end
