@@ -13,7 +13,11 @@ class Song
     new_song = self.new(song)
     new_song.artist = artist
     new_song.name = song
-    new_song
+    new_song.save
+  end
+
+  def save
+    @songs << self
   end
 
 end
