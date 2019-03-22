@@ -35,4 +35,8 @@ class Artist
     self.find(name) ? self.find(name) : self.create(name)
   end
 
+  def print_songs
+    @songs
+  end
+
 end
