@@ -7,6 +7,10 @@ class Artist
     @@all
   end
 
+  def save
+    @@all << self
+  end
+  
   def initialize(name)
     @name = name
     @songs = []
@@ -20,10 +24,6 @@ class Artist
   def self.find_or_create_by_name(name)
     if @@all.exclude?(name) { Artist.new(name) }
     end
-  end
-
-  def save
-    @@all << self
   end
 
 end
