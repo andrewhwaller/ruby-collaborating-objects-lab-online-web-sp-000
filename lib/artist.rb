@@ -14,6 +14,7 @@ class Artist
   def save
     if @@all.!include?(self)
     @@all << self
+    end
   end
 
 end
