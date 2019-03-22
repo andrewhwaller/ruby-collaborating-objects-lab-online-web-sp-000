@@ -8,7 +8,7 @@ class MP3Importer
 
   def files(path)
     files = []
-    files << path.glob("mp3/*.mp3")
+    files << Dir.glob("mp3/*.mp3")
   end
 
   def import
