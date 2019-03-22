@@ -12,7 +12,9 @@ class Artist
   end
 
   def save
+    if @@all.include?(self) == false then
     @@all << self
+  end
   end
 
 end
