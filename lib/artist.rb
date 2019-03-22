@@ -15,6 +15,5 @@ class Artist
     if @@all.!include?(self)
     @@all << self
   end
-  end
 
 end
