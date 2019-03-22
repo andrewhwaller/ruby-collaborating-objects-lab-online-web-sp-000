@@ -22,7 +22,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if @@all.exclude?(name) { Artist.new(name) }
+    if @@all.exclude?(name) then { Artist.new(name) }
     end
   end
 
