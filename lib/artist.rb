@@ -16,7 +16,7 @@ class Artist
     @songs << song
   end
 
-  def find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     @@all.!include?(name) do Artist.new(name)
     end
   end
