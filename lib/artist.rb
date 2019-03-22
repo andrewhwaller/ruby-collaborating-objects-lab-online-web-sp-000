@@ -8,7 +8,7 @@ class Artist
     @songs = []
   end
 
-  def seld.add_song(song)
+  def self.add_song(song)
     @songs << song
   end
 
