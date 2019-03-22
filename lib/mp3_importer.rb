@@ -8,7 +8,7 @@ class MP3Importer
 
   def files(path)
     files = []
-    path.glob("mp3/*.mp3")
+    self.path.glob("mp3/*.mp3")
   end
 
   def import
