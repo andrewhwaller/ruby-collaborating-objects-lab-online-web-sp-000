@@ -17,6 +17,10 @@ class Artist
     self.save
   end
 
+  def create(name)
+    Artist.new(name)
+  end
+
   def add_song(song)
     @songs << song
   end
